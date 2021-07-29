@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Flexing</title>
+	<style>
+	.bigitem {
+   /* This will be twice as */
+   /* big as the small item. */
+   flex: 1 0 0;
+   background-color: lime;
+}
+.smallitem {
+   flex: 5 0 50px;
+   background-color: yellow;
+   text-align: center;
+}
+.flexcontainer {
+   height: calc(100vh - 100px);
+   display: flex;
+   flex-direction: row;
+   /*align-items: center;
+   justify-content: center; */
+}
+	</style>
+  </head>
+  <body>
+    <h1>My title</h1>
+	<div class="flexcontainer">
+		<div class="bigitem">biggy</div>
+		<div class="smallitem">small</div>
+	</div>
+      
+	  </body>
+</html>
